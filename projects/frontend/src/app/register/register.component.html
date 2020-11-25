@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div id="page-content">
+        <h1>Registration Form</h1>
+        <form  (ngSubmit)="register(r)" #r="ngForm" autocomplete="off">
+            
+            <label>NAME</label>
+            <input type="text" name="username" id="username" class="reg" [(ngModel)]="username" placeholder="Enter username ex: asher" required autofocus><br>
+            
+            <label>EMAIL-ID</label>
+            <input type="email" name="email" id="email"  class="reg"[(ngModel)]="email" placeholder="Enter user email ex: asher@gmail.com" required ><br>
+            
+            <label>PASSWORD</label>
+            <input type="password" name="password" id="password" class="reg" [(ngModel)]="password" placeholder="Enter password" required><br>
+            
+            <button [disabled]="r.invalid" >REGISTER</button>
+        
+        </form>
+        ALREADY HAVE AN ACCOUNT.<a  routerLink="/login" > LOGIN HERE..</a>
+    </div>
+</div>
+<div id="overlay-area"></div>

@@ -7,9 +7,10 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title: any;
   
   constructor(private toastr:ToastrService){
-    this.toastr.success("Success");
+    //this.toastr.success("Success");
   }
 
 }
