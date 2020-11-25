@@ -11,7 +11,7 @@
                 <a class="nav-link" href="index.html" *ngIf="isLoggedInUser">Home</a>
             </li>
             <li class="nav-item dropdown active">
-               <a class="nav-link dropdown-toggle" href="#"data-toggle="dropdown" *ngIf="isLoggedInUser">Tours</a>
+              <!--  <a class="nav-link dropdown-toggle" href="#"data-toggle="dropdown" *ngIf="isLoggedInUser">Tours</a> -->
              <!--   <ul class="dropdown-menu">
                 <li><a class="dropdown-item" routerLink="/destination"> Destination</a></li>
                
@@ -27,12 +27,12 @@
             <li class="nav-item">
                 <a class="nav-link " routerLink="/register" data-toggle="collapse" *ngIf="!isLoggedInUser">Register</a>
             </li>
-            <li class="nav-item ">
+           <!--  <li class="nav-item ">
                 <a class="nav-link"  routerLink="/bookings" *ngIf="isLoggedInUser">Booking</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="" *ngIf="isLoggedInUser"style="display: block" >Welcome</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" (click)="logout()" *ngIf="isLoggedInUser">Logout </a>
             </li>
